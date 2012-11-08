@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/wallpaper" >
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Friends"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/friends_name_textfield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/friends_add_contact"
+        android:layout_below="@+id/title_textview"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/friends_number_textfield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/friends_name_textfield"
+        android:layout_below="@+id/friends_name_textfield"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/friends_add_contact"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friends_number_textfield"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Add a contact" />
+
+    <Button
+        android:id="@+id/friends_import_contact"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/friends_add_contact"
+        android:layout_below="@+id/friends_add_contact"
+        android:layout_marginTop="20dp"
+        android:text="Import Contact" />
+
+    <Button
+        android:id="@+id/friends_delete_contact"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/friends_import_contact"
+        android:layout_below="@+id/friends_import_contact"
+        android:layout_marginTop="20dp"
+        android:text="Delete Contact" />
+
+    <Button
+        android:id="@+id/friends_buddybeaconers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/friends_delete_contact"
+        android:layout_alignRight="@+id/friends_delete_contact"
+        android:layout_below="@+id/friends_delete_contact"
+        android:layout_marginTop="20dp"
+        android:text="Buddy Beaconers" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/friends_number_textfield"
+        android:layout_alignBottom="@+id/friends_number_textfield"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFFFF"
+        android:text="Number:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/friends_name_textfield"
+        android:layout_alignBottom="@+id/friends_name_textfield"
+        android:layout_alignRight="@+id/textView2"
+        android:text="Name:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

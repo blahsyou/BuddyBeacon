@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:padding="10dp"
+    tools:context=".StartActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/radar" />
+
+    <TextView
+        android:id="@+id/TitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="45dip"
+        android:text="Buddy Beacon"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/main_events_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Events" />
+
+    <Button
+        android:id="@+id/main_settings_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Settings" />
+
+    <Button
+        android:id="@+id/main_friends_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/main_settings_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:text="Friends" />
+
+    <Button
+        android:id="@+id/main_start_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/main_friends_button"
+        android:layout_alignBottom="@+id/main_friends_button"
+        android:layout_alignLeft="@+id/main_events_button"
+        android:text="Start Map" />
+
+    <Button
+        android:id="@+id/main_beacon_button"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/main_friends_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:enabled="false"
+        android:text="Send Beacon" />
+
+</RelativeLayout>
